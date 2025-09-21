@@ -1,4 +1,4 @@
-# 🎬 AI 기반 한국어 영화 리뷰 감성 분석 API
+# AI 기반 한국어 영화 리뷰 감성 분석 API
 
 **Hugging Face Transformers의 사전 학습 모델(Ko-ELECTRA)을 Naver Movie Review Corpus(NSMC) 데이터셋으로 파인튜닝하고, 이를 FastAPI를 통해 실시간 예측 API로 배포한 프로젝트입니다.**
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 🚀 프로젝트 목표
+## 프로젝트 목표
 
 1.  **모델링:** 단순한 머신러닝(TF-IDF) 베이스라인 모델과 최신 딥러닝(BERT 계열) 모델의 성능을 비교 분석하여, 자연어 처리(NLP) 모델의 발전 과정을 이해합니다.
 2.  **API 개발:** 완성된 AI 모델을 실제 서비스에서 사용할 수 있도록, FastAPI를 활용하여 RESTful API 서버를 구축합니다.
@@ -14,9 +14,9 @@
 
 ---
 
-## 🛠️ 사용 기술 및 환경
+## 사용 기술 및 환경
 
-* **OS:** **[Windows 11 (WSL2 Ubuntu)]**
+* **OS:** **[WSL2 Ubuntu]**
 * **Language:** Python 3.x
 * **AI/ML:** `PyTorch`, `Hugging Face Transformers`, `Scikit-learn`, `KoNLPy`
 * **API Server:** `FastAPI`, `Uvicorn`
