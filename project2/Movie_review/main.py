@@ -9,7 +9,7 @@ app = FastAPI()
 # -------------------- [모델 로딩] --------------------
 # 서버가 시작될 때 모델을 한 번만 불러옵니다.
 MODEL_NAME = "beomi/kcELECTRA-base-v2022"
-MODEL_PATH = "./best_model_state.bin" # 저장된 모델 파일 경로
+MODEL_PATH = "/home/asd/projects/Portfolio/project2/Movie_review/best_model_state.bin" # 저장된 모델 파일 경로
 
 # 토크나이저와 모델을 불러옵니다.
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
