@@ -14,7 +14,7 @@
 
 ---
 
-## 🛠️ 사용 기술 및 환경
+## 사용 기술 및 환경
 
 * **OS:** **[WSL2 Ubuntu]**
 * **Language:** Python 3.10.12
@@ -25,7 +25,7 @@
 
 ---
 
-## 🗂️ 데이터셋
+## 데이터셋
 
 * **데이터:** [Naver Sentiment Movie Corpus (NSMC)](https://github.com/e9t/nsmc)
 * **구성:** Training data 150K개, Test data 50K개
@@ -50,11 +50,11 @@
 
 
   **API 서버 실행**
-    * (WSL 환경) Tokenizer 병렬 처리 문제 해결을 위해 아래 명령어를 먼저 실행합니다.
+    - * (WSL 환경) Tokenizer 병렬 처리 문제 해결을 위해 아래 명령어를 먼저 실행합니다.
         ```bash
         export TOKENIZERS_PARALLELISM=false
         ```
-    * Uvicorn으로 서버를 실행합니다.
+    - * Uvicorn으로 서버를 실행합니다.
         ```bash
         uvicorn main:app --reload --host 0.0.0.0 --port 8000
         ```
