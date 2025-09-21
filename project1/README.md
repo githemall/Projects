@@ -24,7 +24,7 @@
     * `Matplotlib`
     * `Pillow (PIL)`
 * **개발 환경:**
-* **OS:** WSL (Ubuntu)
+* **OS:** WSL2 (Ubuntu)
 * **IDE:** Visual Studio Code
 * **Language:** Python 3.9.22
 * **GPU:** NVIDIA GeForce RTX 3060TI
