@@ -17,7 +17,7 @@
 ## 사용 기술 및 환경
 
 * **OS:** **[WSL2 Ubuntu]**
-* **Language:** Python 3.x
+* **Language:** Python 3.10.12
 * **AI/ML:** `PyTorch`, `Hugging Face Transformers`, `Scikit-learn`, `KoNLPy`
 * **API Server:** `FastAPI`, `Uvicorn`
 * **Libraries:** `Pandas`, `NumPy`, `requests` (자세한 내용은 `requirements.txt` 참조)
