@@ -102,4 +102,4 @@
 
 ## 🔗 관련 링크
 
-* **블로그 포스트:** **[Velog - AI 모델, 그래서 어떻게 쓰나요? - BERT와 FastAPI로 만든 감성 분석 API 배포 삽질기](<https://velog.io/@githemall/AI-%EB%AA%A8%EB%8D%B8-%EA%B7%B8%EB%9E%98%EC%84%9C-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%93%B0%EB%82%98%EC%9A%94-BERT%EC%99%80-FastAPI%EB%A1%9C-%EB%A7%8C%EB%93%A0-%EA%B0%90%EC%84%B1-%EB%B6%84%EC%84%9D-API-%EB%B0%B0%ED%8F%AC-%EC%82%BD%EC%A7%88%EA%B8%B0>)**
+* **블로그 포스트:** **[Velog - AI 모델, 그래서 어떻게 쓰나요?: BERT와 FastAPI로 만든 감성 분석 API 배포 삽질기](<https://velog.io/@githemall/AI-%EB%AA%A8%EB%8D%B8-%EA%B7%B8%EB%9E%98%EC%84%9C-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%93%B0%EB%82%98%EC%9A%94-BERT%EC%99%80-FastAPI%EB%A1%9C-%EB%A7%8C%EB%93%A0-%EA%B0%90%EC%84%B1-%EB%B6%84%EC%84%9D-API-%EB%B0%B0%ED%8F%AC-%EC%82%BD%EC%A7%88%EA%B8%B0>)**
