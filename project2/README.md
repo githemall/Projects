@@ -50,13 +50,9 @@
 
 
   **API 서버 실행**
-    - * (WSL 환경) Tokenizer 병렬 처리 문제 해결을 위해 아래 명령어를 먼저 실행합니다.
+    - * (WSL 환경) Uvicorn으로 서버를 실행합니다.
         ```bash
-        export TOKENIZERS_PARALLELISM=false
-        ```
-    - * Uvicorn으로 서버를 실행합니다.
-        ```bash
-        uvicorn main:app --reload --host 0.0.0.0 --port 8000
+        uvicorn main:app --reload
         ```
 
   **API 테스트**
@@ -97,13 +93,10 @@
 
 1.  **환경 설정:** `KoNLPy` 사용을 위한 **Java(JDK) 및 `JAVA_HOME` 환경 변수 설정** 방법을 익혔습니다. 이를 통해 Python 생태계가 다른 언어(Java)와 어떻게 상호작용하는지 이해하는 좋은 계기가 되었습니다.
 
-2.  **프로세스 행(Hang) 디버깅:**
-    * **학습 평가:** `DataLoader`의 `num_workers > 0` 설정이 Jupyter/WSL 환경에서 프로세스 교착 상태(deadlock)를 일으켜 평가가 멈추는 현상을 발견하고, `num_workers=0`으로 설정하여 해결했습니다.
-    * **API 서버:** FastAPI에서 `Tokenizer`의 병렬 처리 기능이 서버 프로세스와 충돌하여 예측 요청 시 서버가 멈추는 문제를 `export TOKENIZERS_PARALLELISM=false` 환경 변수 설정으로 해결했습니다.
 
-3.  **네트워크 디버깅:** WSL2 환경에서 Windows 브라우저로의 접속이 간헐적으로 실패하는 문제를 해결하기 위해, **`curl` 테스트, `wsl --shutdown`, 방화벽 규칙 추가, 서드파티 보안 프로그램(AdGuard) 필터링 예외 처리** 등 깊이 있는 네트워크 디버깅을 경험했습니다. 이 과정을 통해 문제의 원인을 체계적으로 좁혀나가는 능력을 길렀습니다.
+2.  **네트워크 디버깅:** WSL2 환경에서 Windows 브라우저로의 접속이 간헐적으로 실패하는 문제를 해결하기 위해, **`curl` 테스트, `wsl --shutdown`, 방화벽 규칙 추가, 서드파티 보안 프로그램 필터링 예외 처리** 등 깊이 있는 네트워크 디버깅을 경험했습니다. 이 과정을 통해 문제의 원인을 체계적으로 좁혀나가는 능력을 길렀습니다.
 
-4.  **라이브러리 업데이트 대응:** `transformers` 라이브러리 버전업으로 인해 `AdamW`의 위치가 변경되고(`torch.optim`), 인자가 달라지는(`correct_bias` 제거) 문제에 대응하며, 라이브러리 공식 문서를 참조하는 것의 중요성을 깨달았습니다.
+3.  **라이브러리 업데이트 대응:** `transformers` 라이브러리 버전업으로 인해 `AdamW`의 위치가 변경되고(`torch.optim`), 인자가 달라지는(`correct_bias` 제거) 문제에 대응하며, 라이브러리 공식 문서를 참조하는 것의 중요성을 깨달았습니다.
 
 ---
 
