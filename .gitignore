@@ -8,4 +8,5 @@ __pycache__/
 *.pkl
 *.npz
 recycle_dataset/
+taco_dataset/
 runs/
