@@ -26,7 +26,7 @@ plt.figure(figsize=(12, 8))
 # Draw line plots first to connect the points for each model family.
 sns.lineplot(
     data=df,
-    x='gflops',
+    x='params',
     y='map',
     hue='Version',
     palette={'YOLOv8': 'orangered', 'YOLOv11': 'royalblue'},
@@ -39,7 +39,7 @@ sns.lineplot(
 # style='Model_size' will use different markers for n, s, m models.
 ax = sns.scatterplot(
     data=df,
-    x='gflops',
+    x='params',
     y='map',
     hue='Version',
     style='Model_size',
@@ -49,12 +49,12 @@ ax = sns.scatterplot(
 
 # Add model name text next to each point.
 for i, point in df.iterrows():
-    ax.text(point['gflops'] + 1, point['map'], str(point['model_name']),
+    ax.text(point['params'] + 1, point['map'], str(point['model_name']),
             horizontalalignment='left', size='medium', color='black', weight='semibold')
 
 # 3. Set Graph Title and Axis Labels in English
 plt.title('YOLOv11 vs YOLOv8: Accuracy-Efficiency Trade-off', fontsize=20, pad=20)
-plt.xlabel('Complexity (GFLOPs) - Lower is Better', fontsize=14)
+plt.xlabel('Size (Parameters(M)) - Lower is Better', fontsize=14)
 plt.ylabel('Accuracy (mAP@0.5-0.95) - Higher is Better', fontsize=14)
 plt.legend(title='', fontsize=12, loc='lower right')
 plt.grid(True)
