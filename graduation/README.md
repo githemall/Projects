@@ -13,7 +13,7 @@
 * **YOLOv8 계열:** `yolov8n`, `yolov8s`, `yolov8m`
 
 ### 1.3. 사용 데이터셋
-* **데이터:** 공개된 재활용품/쓰레기 객체 탐지 데이터셋 (Kaggle, Roboflow Universe 등)
+* **데이터:** TACO dataset
 * **클래스:** `Bottle`, `Can`, `Paper`, `Plastic bag`, `Cigarette`, `Bottle cap` 등 18개 이상의 다양한 재활용품 및 쓰레기 클래스 포함.
 * **데이터 분할:** Train (70%), Valid (20%), Test (10%) 비율로 분할하여 사용.
 
